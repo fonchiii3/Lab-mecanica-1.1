@@ -1,0 +1,566 @@
+\documentclass[12pt,a4paper]{article}
+% 12pt:     Tamaño de fuente
+% a4papper: Tamaño de papel
+% article:  Formato artículo, está dividido por secciones y subsecciones. Otros formatos: report, letter, book, etc.
+
+\usepackage[spanish, es-tabla]{babel}
+% Configura en español los nombres de figuras, tablas, etc.
+\usepackage[utf8]{inputenc}                 % Permite el uso directo de tildes y otros.
+\usepackage{amsmath,amssymb}
+% Añade símbolos matemáticos para las ecuaciones.
+\usepackage{parskip}
+% Elimina la sangría
+\usepackage{geometry}
+% Permite modificar los márgenes de la página a gusto.
+\usepackage{multicol}
+% Ordena el cuerpo del documento en 2 o más columnas.
+\usepackage{graphicx}
+% Para poner imágenes.
+\usepackage{enumitem}
+% Para modificar los tags de los enumerate.
+\usepackage{array}
+% Para ordenar texto y ecuaciones.
+\usepackage{url}
+% Permite usar url que redirigen a la página web.
+\usepackage{hyperref}
+% Permite que se puedan clickear las urls, citas y referencias.
+
+\spanishdecimal{.} % punto decimal
+\geometry{margin=2cm} % margenes de la hoja
+\renewcommand{\baselinestretch}{1.3} % tamaño de las filas de las tablas
+
+\begin{document}
+
+\begin{center}
+{\Large\textbf{INFORME N°1}}
+
+{\LARGE\textbf{Fundamentos de Medición, Tratamiento de Errores}}
+{\LARGE\textbf{y Análisis de Datos}}
+
+\rule{\textwidth}{0.5pt}
+
+\begin{tabular}{ll}
+    \textbf{Estudiantes:} & Nombre Apellido \\
+                          & Nombre Apellido \\
+                          & Nombre Apellido \\
+                          & Nombre Apellido \\[0.2cm]
+    \textbf{Profesora:}   & Nombre Apellido \\
+    \textbf{Ayudante:}    & Nombre Apellido \\[0.2cm]
+    \textbf{Fecha de entrega:} & DD de mes de AAAA
+\end{tabular}
+
+\vspace{0.4cm}
+\rule{\textwidth}{0.5pt}
+
+\end{center}
+
+\section{Parte 1 - Medición directa de magnitudes físicas} \label{Parte-1}
+
+\subsection{Procedimiento experimental} \label{Procedimiento-Parte-1}
+
+Describan el procedimiento general utilizado para realizar las mediciones directas. La descripción debe ser suficientemente detallada para que otra persona pueda comprender y reproducir el procedimiento. En particular, deben indicar:
+
+\begin{enumerate}[label=\alph*)]
+\item qué objetos y magnitudes físicas midieron;
+\item qué instrumento utilizaron para cada magnitud y por qué lo consideraron adecuado;
+\item cómo realizaron las mediciones y en qué orden;
+\item cómo organizaron las mediciones entre los integrantes del grupo;
+\item qué criterios utilizaron para tomar decisiones durante el procedimiento;
+\item si descartaron o repitieron alguna medición, indiquen cuál y justifiquen experimentalmente la decisión.
+\end{enumerate}
+
+Procuren siempre dejar clara la secuencia de ideas y el razonamiento seguido en cada uno de los pasos del procedimiento. Esto no significa que deben ``adornar'' los párrafos, la idea es escribir \textbf{frases precisas y concisas} que contengan toda la información necesaria. Piensen que están contándole el procedimiento a una persona que no tiene idea acerca de lo que se hace en un laboratorio.
+
+Pueden escribirlo como \textit{itemize} o como párrafo, según prefieran. También pueden citar libros \cite{libro}, apuntes de clase \cite{apunte} y/o páginas web \cite{web} de donde hayan sacado información. No hay una cantidad mínima o máxima de citas, ni tampoco deben ser necesariamente de fuentes científicas.
+
+\textbf{No es necesario describir nuevamente este procedimiento en cada subsección.} Pueden escribir los criterios generales y las ecuaciones utilizadas aquí. En las subsecciones siguientes, presenten los resultados y cálculos correspondientes a cada conjunto de mediciones y hagan referencia a esta sección cuando sea necesario.
+
+\subsection{Nombre del primer instrumento}
+
+Escriban una breve descripción del objeto, indicando sus características físicas y geométricas. El conjunto de todas las mediciones realizadas sobre \textit{la magnitud} del objeto puede encontrarse en la Tabla \ref{mediciones-inst-1}.
+
+\begin{multicols}{3}
+\begin{itemize}
+    \item Objeto:
+    \item Magnitud:
+    \item Resolución instrumento:
+\end{itemize}
+\end{multicols}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Promedio $\bar{x}$} & \\ \hline
+\textbf{Desviación Estándar $s$} & \\ \hline
+\textbf{Error absoluto $\Delta x$} & \\ \hline
+\textbf{Error Relativo Porcentual $\varepsilon_{x\%}$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-inst-1}
+\end{table}
+
+Para calcular el promedio $\bar{x}$ se realizó el siguiente procedimiento:
+
+\begin{align*}
+\bar{x} &= \frac{1}{N} \sum_{i=1}^{N} x_i \\
+&= \cdots 
+\end{align*}
+
+Luego, para calcular la desviación estándar $s$ se realizó el siguiente procedimiento:
+
+\begin{align*}
+s &= \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (x_i - \bar{x})^2}  \\
+&= \cdots 
+\end{align*}
+
+Finalmente, para calcular el error relativo porcentual $\varepsilon_{x\%}$ se realizó el siguiente procedimiento:
+
+\begin{align*}
+\varepsilon_{x\%} &= \left(\frac{\Delta x}{\bar{x}}\right) \times 100 \\
+&= \cdots 
+\end{align*}
+
+Así, con los cálculos realizados sobre los datos disponibles en la Tabla \ref{mediciones-inst-1}, se llegó a que \textit{la magnitud} de \textit{el objeto} es:
+
+\begin{equation*}
+x = \bar{x} \pm \Delta x
+\end{equation*}
+
+\subsection{Nombre del segundo instrumento}
+
+Escriban una breve descripción del objeto, indicando sus características físicas y geométricas. El conjunto de todas las mediciones realizadas sobre \textit{la magnitud} del objeto puede encontrarse en la Tabla \ref{mediciones-inst-2}.
+
+\begin{multicols}{3}
+\begin{itemize}
+    \item Objeto:
+    \item Magnitud:
+    \item Resolución instrumento:
+\end{itemize}
+\end{multicols}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Promedio $\bar{x}$} & \\ \hline
+\textbf{Desviación Estándar $s$} & \\ \hline
+\textbf{Error absoluto $\Delta x$} & \\ \hline
+\textbf{Error Relativo Porcentual $\varepsilon_{x\%}$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-inst-2}
+\end{table}
+
+Siguiendo el mismo procedimiento que para el objeto anterior, esta vez con los datos disponibles en la Tabla \ref{mediciones-inst-2}, se llegó a que \textit{la magnitud} de \textit{el objeto} es:
+
+\begin{equation*}
+x = \bar{x} \pm \Delta x
+\end{equation*}
+
+\subsection{Nombre del tercer instrumento}
+
+Escriban una breve descripción del objeto, indicando sus características físicas y geométricas. El conjunto de todas las mediciones realizadas sobre \textit{la magnitud} del objeto puede encontrarse en la Tabla \ref{mediciones-inst-3}.
+
+\begin{multicols}{3}
+\begin{itemize}
+    \item Objeto:
+    \item Magnitud:
+    \item Resolución instrumento:
+\end{itemize}
+\end{multicols}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Promedio $\bar{x}$} & \\ \hline
+\textbf{Desviación Estándar $s$} & \\ \hline
+\textbf{Error absoluto $\Delta x$} & \\ \hline
+\textbf{Error Relativo Porcentual $\varepsilon_{x\%}$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-inst-3}
+\end{table}
+
+Siguiendo el mismo procedimiento que para el objeto anterior, esta vez con los datos disponibles en la Tabla \ref{mediciones-inst-3}, se llegó a que \textit{la magnitud} de \textit{el objeto} es:
+
+\begin{equation*}
+x = \bar{x} \pm \Delta x
+\end{equation*}
+
+\subsection{Nombre del cuarto instrumento}
+
+Escriban una breve descripción del objeto, indicando sus características físicas y geométricas. El conjunto de todas las mediciones realizadas sobre \textit{la magnitud} del objeto puede encontrarse en la Tabla \ref{mediciones-inst-4}.
+
+\begin{multicols}{3}
+\begin{itemize}
+    \item Objeto:
+    \item Magnitud:
+    \item Resolución instrumento:
+\end{itemize}
+\end{multicols}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Promedio $\bar{x}$} & \\ \hline
+\textbf{Desviación Estándar $s$} & \\ \hline
+\textbf{Error absoluto $\Delta x$} & \\ \hline
+\textbf{Error Relativo Porcentual $\varepsilon_{x\%}$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-inst-4}
+\end{table}
+
+Siguiendo el mismo procedimiento que para el objeto anterior, esta vez con los datos disponibles en la Tabla \ref{mediciones-inst-4}, se llegó a que \textit{la magnitud} de \textit{el objeto} es:
+
+\begin{equation*}
+x = \bar{x} \pm \Delta x
+\end{equation*}
+
+\subsection{Nombre del quinto instrumento}
+
+Escriban una breve descripción del objeto, indicando sus características físicas y geométricas. El conjunto de todas las mediciones realizadas sobre \textit{la magnitud} del objeto puede encontrarse en la Tabla \ref{mediciones-inst-5}.
+
+\begin{multicols}{3}
+\begin{itemize}
+    \item Objeto:
+    \item Magnitud:
+    \item Resolución instrumento:
+\end{itemize}
+\end{multicols}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Promedio $\bar{x}$} & \\ \hline
+\textbf{Desviación Estándar $s$} & \\ \hline
+\textbf{Error absoluto $\Delta x$} & \\ \hline
+\textbf{Error Relativo Porcentual $\varepsilon_{x\%}$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-inst-5}
+\end{table}
+
+Siguiendo el mismo procedimiento que para el objeto anterior, esta vez con los datos disponibles en la Tabla \ref{mediciones-inst-5}, se llegó a que \textit{la magnitud} de \textit{el objeto} es:
+
+\begin{equation*}
+x = \bar{x} \pm \Delta x
+\end{equation*}
+
+\newpage
+
+\section{Parte 2 - Medición indirecta} \label{Parte-2}
+
+\subsection{Procedimiento experimental}
+
+Descripción del procedimiento general utilizado para realizar las mediciones indirectas. En particular, deben indicar:
+
+\begin{enumerate}[label=\alph*)]
+    \item qué objeto eligieron;
+    \item breve descripción del objeto con sus características físicas y geométricas;
+    \item qué magnitudes \textbf{indirectas} eligieron y por qué;
+    \item qué criterios utilizaron para tomar decisiones durante el procedimiento;
+    \item si descartaron o repitieron alguna medición, indiquen cuál y justifiquen experimentalmente la decisión.
+\end{enumerate}
+
+Pueden utilizar citas bibliográficas si así lo desean. Pueden referenciar la Parte \ref{Parte-1}, para que no tengan que volver a detallar los mismos procedimientos y así no tener información duplicada.
+
+\textbf{No es necesario describir nuevamente este procedimiento en cada subsección.} Pueden escribir los criterios generales y las ecuaciones utilizadas aquí. En las subsecciones siguientes, presenten los resultados y cálculos correspondientes a cada conjunto de mediciones y hagan referencia a esta sección cuando sea necesario.
+
+\subsection{Nombre de la primera magnitud}
+
+\begin{itemize}
+    \item Magnitud medida:
+    \item Instrumento de medición:
+    \item Resolución del instrumento:
+\end{itemize}
+
+\underline{\textbf{Nota:}} Si van a reutilizar un set de datos que ya registraron anteriormente, no es necesario que vuelvan a llenar la tabla. Simplemente referencien la Tabla \ref{mediciones-inst-1} (por ejemplo) de la Parte \ref{Parte-1}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Resultado medición $\bar{x} \pm \Delta x$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-magn-1}
+\end{table}
+
+\subsection{Nombre de la segunda magnitud}
+
+\begin{itemize}
+    \item Magnitud medida:
+    \item Instrumento de medición:
+    \item Resolución del instrumento:
+\end{itemize}
+
+\underline{\textbf{Nota:}} Si van a reutilizar un set de datos que ya registraron anteriormente, no es necesario que vuelvan a llenar la tabla. Simplemente referencien la Tabla \ref{mediciones-inst-2} (por ejemplo) de la Parte \ref{Parte-1}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Resultado medición $\bar{x} \pm \Delta x$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-magn-2}
+\end{table}
+
+\subsection{Nombre de la tercera magnitud}
+
+\begin{itemize}
+    \item Magnitud medida:
+    \item Instrumento de medición:
+    \item Resolución del instrumento:
+\end{itemize}
+
+\underline{\textbf{Nota:}} Si van a reutilizar un set de datos que ya registraron anteriormente, no es necesario que vuelvan a llenar la tabla. Simplemente referencien la Tabla \ref{mediciones-inst-3} (por ejemplo) de la Parte \ref{Parte-1}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Resultado medición $\bar{x} \pm \Delta x$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-magn-3}
+\end{table}
+
+\subsection{Nombre de la cuarta magnitud}
+
+\begin{itemize}
+    \item Magnitud medida:
+    \item Instrumento de medición:
+    \item Resolución del instrumento:
+\end{itemize}
+
+\underline{\textbf{Nota:}} Si van a reutilizar un set de datos que ya registraron anteriormente, no es necesario que vuelvan a llenar la tabla. Simplemente referencien la Tabla \ref{mediciones-inst-4} (por ejemplo) de la Parte \ref{Parte-1}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Medición N°} & \textit{Magnitud} \textbf{(}\textit{Unidad}\textbf{)} \\ \hline
+1 & \\ \hline
+2 & \\ \hline
+3 & \\ \hline
+\vdots & \\ \hline
+\textbf{Resultado medición $\bar{x} \pm \Delta x$} & \\ \hline
+\end{tabular}
+\caption{Conjunto de mediciones y los respectivos cálculos realizados con \textit{el instrumento} sobre \textit{la magnitud} de \textit{el objeto}.}
+\label{mediciones-magn-4}
+\end{table}
+
+\newpage
+
+\subsection{Cálculo de la primera magnitud indirecta}
+
+Con los datos de las Tablas \ref{mediciones-magn-1}, \ref{mediciones-magn-2} y \ref{mediciones-magn-3} se calculó la primera magnitud de la siguiente manera:
+
+\begin{align*}
+    z &= f(x,y) \\
+     &= \cdots
+\end{align*}
+
+Luego, se propagó el error con el siguiente procedimiento:
+
+\begin{align*}
+    \Delta z &= \sqrt{ \left( \frac{\partial z}{\partial x} \Delta x \right)^2 + \left( \frac{\partial z}{\partial y} \Delta y \right)^2 + \dots } \\
+     &= \cdots
+\end{align*}
+
+Así, el valor de la primera magnitud indirecta es:
+
+\begin{equation*}
+    z = \bar{z} \pm \Delta z
+\end{equation*}
+
+\subsection{Cálculo de la segunda magnitud indirecta}
+
+Con los datos de las Tablas \ref{mediciones-magn-1}, \ref{mediciones-magn-2}, \ref{mediciones-magn-3} y \ref{mediciones-magn-4} se calculó la segunda magnitud de la siguiente manera:
+
+\begin{align*}
+    z &= f(x,y) \\
+     &= \cdots
+\end{align*}
+
+Luego, se propagó el error con el siguiente procedimiento:
+
+\begin{align*}
+    \Delta z &= \sqrt{ \left( \frac{\partial z}{\partial x} \Delta x \right)^2 + \left( \frac{\partial z}{\partial y} \Delta y \right)^2 + \dots } \\
+     &= \cdots
+\end{align*}
+
+Así, el valor de la segunda magnitud indirecta es:
+
+\begin{equation*}
+    z = \bar{z} \pm \Delta z
+\end{equation*}
+
+\newpage
+
+\section{Parte 3 - Análisis de datos y representación gráfica} \label{Parte-3}
+
+\textit{Pendiente.}
+
+% En esta parte se trabajará con conjuntos de datos proporcionados durante la tercera semana de laboratorio. El objetivo es organizar, representar y analizar los datos utilizando herramientas gráficas, tanto de forma manual como mediante Python.
+
+% Para cada conjunto de datos, deben identificar las variables involucradas, representar gráficamente la información disponible y describir las características principales de los datos. La descripción debe basarse en la información que puede obtenerse directamente de la tabla y del gráfico, evitando realizar cálculos innecesarios.
+
+% \subsection{Descripción de los datos}
+
+% Para cada conjunto de datos, indiquen qué magnitudes físicas corresponden a las variables registradas, incluyendo sus respectivas unidades. Identifiquen cuál de ellas corresponde a la variable independiente y cuál a la variable dependiente, cuando corresponda.
+
+% Antes de realizar los gráficos, describan brevemente las principales características de los datos. En particular, indiquen:
+
+% \begin{enumerate}[label=\alph*)]
+% \item qué variables se están relacionando;
+% \item qué unidades tiene cada variable;
+% \item cuál es el rango de valores de cada variable;
+% \item si los datos presentan alguna tendencia o comportamiento evidente;
+% \item si existen puntos que se alejen significativamente del comportamiento general de los datos.
+% \end{enumerate}
+
+% No es necesario realizar cálculos adicionales para describir los datos. La descripción debe centrarse en la información que puede obtenerse directamente de los valores registrados.
+
+% \subsection{Gráficos}
+
+% Representen cada conjunto de datos mediante un gráfico realizado a mano y mediante un gráfico elaborado utilizando Python.
+
+% Para ambos gráficos deben considerar los siguientes elementos:
+
+% \begin{itemize}
+% \item nombre de la variable independiente y dependiente;
+% \item unidades de ambas variables;
+% \item escala adecuada en ambos ejes;
+% \item título o descripción del gráfico;
+% \item representación clara de todos los datos disponibles.
+% \end{itemize}
+
+% El gráfico realizado a mano debe ser suficientemente claro para identificar la tendencia de los datos. El gráfico realizado en Python debe contener los mismos datos y utilizar una representación equivalente.
+
+% No es necesario que los dos gráficos sean idénticos en su apariencia, pero ambos deben representar correctamente la información contenida en el conjunto de datos.
+
+% Después de cada gráfico, escriban una breve descripción de lo que se observa. Indiquen, por ejemplo, si existe una tendencia creciente o decreciente, si los datos parecen seguir una relación lineal o no lineal y si existe algún comportamiento particular que sea relevante mencionar.
+
+% \subsection{Ajuste lineal}
+
+% Cuando los datos presenten un comportamiento aproximadamente lineal, realicen un ajuste lineal utilizando Python.
+
+% El ajuste debe representarse sobre el mismo gráfico que contiene los datos experimentales. Indiquen la ecuación de la recta obtenida y los valores de sus parámetros.
+
+% \begin{equation*}
+% y = ax+b
+% \end{equation*}
+
+% Describan brevemente qué representan las variables $a$ y $b$ en el contexto del problema. Si alguno de los parámetros tiene una interpretación física, indiquen cuál es y cuáles son sus unidades.
+
+% No es necesario realizar manualmente el cálculo del ajuste lineal. El objetivo es utilizar Python como herramienta para obtener el ajuste y posteriormente interpretar sus resultados.
+
+% \subsection{Interpretación de los parámetros}
+
+% A partir del gráfico y, cuando corresponda, del ajuste lineal, interpreten la información obtenida.
+
+% En particular, indiquen:
+
+% \begin{enumerate}[label=\alph*)]
+% \item qué información proporciona la pendiente del gráfico;
+% \item qué información proporciona el intercepto, cuando sea relevante;
+% \item qué comportamiento de una variable puede inferirse a partir de los cambios en la otra;
+% \item si el comportamiento observado es consistente con una relación física conocida.
+% \end{enumerate}
+
+% La interpretación debe realizarse considerando las unidades de las variables y el contexto físico del conjunto de datos. No basta con indicar el valor de un parámetro: deben explicar qué significa dicho valor.
+
+% \subsection{Relación entre variables}
+
+% Finalmente, para cada conjunto de datos, describan la relación existente entre las variables estudiadas.
+
+% Indiquen si los datos son compatibles con una relación lineal, cuadrática, inversa u otro tipo de comportamiento, cuando esto pueda determinarse a partir de los gráficos. Justifiquen la respuesta utilizando las características observadas en los datos y en las representaciones gráficas.
+
+% Cuando corresponda, comparen la representación gráfica realizada a mano con la obtenida mediante Python e indiquen qué información permite obtener cada una.
+
+% El análisis debe ser breve y preciso. No es necesario repetir los valores que ya aparecen en las tablas o gráficos; concéntrense en explicar qué información física puede extraerse de ellos.
+
+% \section{Parte 3 - Análisis de datos y representación gráfica} \label{Parte-3}
+
+% \subsection{Descripción de los datos}
+
+% \subsection{Gráficos}
+
+% \subsection{Ajuste lineal}
+
+% \subsection{Interpretación de los parámetros}
+
+% \subsection{Relación entre variables}
+
+% \newpage
+
+\section{Análisis y conclusiones}
+
+En esta sección, resuman brevemente lo realizado en cada una de las tres partes del informe. Indiquen qué se hizo y cuál fue el propósito de cada actividad, haciendo referencia a las secciones, tablas y ecuaciones correspondientes cuando sea necesario. No es necesario volver a enunciar todos los datos o repetir los procedimientos detallados anteriormente. El resumen puede realizarse en un solo párrafo o en tres párrafos distintos, uno para cada parte.
+
+Luego del resumen de las actividades, respondan las preguntas de análisis planteadas en las tres partes de la guía. Pueden presentar todas las respuestas en un solo texto o separarlas en tres párrafos, uno para cada actividad. En cada respuesta, no se limiten a indicar un resultado: expliquen el razonamiento que utilizaron para llegar a él y relacionen sus conclusiones con los datos, cálculos y gráficos obtenidos durante el trabajo. Las respuestas a las preguntas de análisis deben estar integradas en el texto, conectando ideas mediante conectores lógicos. Eviten presentar las respuestas de manera aislada, como en formato pregunta-respuesta.
+
+Finalmente, incluyan las principales conclusiones a las que llegaron como grupo. Estas deben sintetizar los aprendizajes obtenidos a partir de las actividades realizadas y destacar los aspectos que consideren más relevantes respecto de la medición de magnitudes físicas, el tratamiento de datos y su representación gráfica. Cuando corresponda, indiquen también las principales limitaciones o fuentes de incertidumbre que hayan identificado durante el trabajo.
+
+Las conclusiones deben basarse en los resultados obtenidos por el grupo. \textbf{No incluyan citas bibliográficas en esta sección}.
+
+\textbf{\underline{Extensión máxima del informe:} indefinida}.
+
+\begin{thebibliography}{99}
+
+\bibitem{libro} Nombre del autor. \textit{Título del libro}. Año.
+
+\bibitem{apunte} Nombre del profesor. \textit{Nombre del curso}. Semestre y año en el que fue entregado el apunte.
+
+\bibitem{web} TikTok de @usuario. Disponible en: \url{https://www.tiktok.com/}. 
+
+\end{thebibliography}
+
+\end{document}
