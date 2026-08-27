@@ -472,100 +472,44 @@ Así, el valor de la segunda magnitud indirecta es:
 
 \section{Parte 3 - Análisis de datos y representación gráfica} \label{Parte-3}
 
-\textit{Pendiente.}
+\subsection{Descripción de los datos}
+El conjunto de datos analizado corresponde a las mediciones de \textit{Resistencia a la Compresión} de un material, expresada en megapascales ($\text{MPa}$).
 
-% En esta parte se trabajará con conjuntos de datos proporcionados durante la tercera semana de laboratorio. El objetivo es organizar, representar y analizar los datos utilizando herramientas gráficas, tanto de forma manual como mediante Python.
+\begin{itemize}
+    \item \textbf{Variable estudiada:} Resistencia a la compresión (Magnitud continua).
+    \item \textbf{Unidad de medida:} Megapascales ($\text{MPa}$).
+    \item \textbf{Rango de valores:} Los datos se extienden desde un valor mínimo de $24.1\text{ MPa}$ hasta un máximo de $32.7\text{ MPa}$.
+    \item \textbf{Comportamiento observado:} Se aprecia un comportamiento unimodal con mayor concentración de frecuencias en el rango central ($27\text{ a }29\text{ MPa}$), disminuyendo progresivamente hacia los extremos.
+\end{itemize}
 
-% Para cada conjunto de datos, deben identificar las variables involucradas, representar gráficamente la información disponible y describir las características principales de los datos. La descripción debe basarse en la información que puede obtenerse directamente de la tabla y del gráfico, evitando realizar cálculos innecesarios.
+\subsection{Gráficos}
+Se representó la distribución de frecuencias de la resistencia a la compresión mediante un histograma agrupado en intervalos de ancho $2\text{ MPa}$ ($\text{bins} = [23, 25, 27, 29, 31, 33]$).
 
-% \subsection{Descripción de los datos}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{grafico_mano.png}
+\caption{Histograma de distribución de resistencia a la compresión realizado a mano.}
+\label{fig:grafico-mano}
+\end{figure}
 
-% Para cada conjunto de datos, indiquen qué magnitudes físicas corresponden a las variables registradas, incluyendo sus respectivas unidades. Identifiquen cuál de ellas corresponde a la variable independiente y cuál a la variable dependiente, cuando corresponda.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{grafico_python.png}
+\caption{Histograma de distribución de resistencia a la compresión elaborado en Python mediante Matplotlib.}
+\label{fig:grafico-python}
+\end{figure}
 
-% Antes de realizar los gráficos, describan brevemente las principales características de los datos. En particular, indiquen:
+En ambos gráficos se observa con claridad que el intervalo modal es el comprendido entre $27\text{ y }29\text{ MPa}$, alcanzando una frecuencia máxima de $8$ muestras.
 
-% \begin{enumerate}[label=\alph*)]
-% \item qué variables se están relacionando;
-% \item qué unidades tiene cada variable;
-% \item cuál es el rango de valores de cada variable;
-% \item si los datos presentan alguna tendencia o comportamiento evidente;
-% \item si existen puntos que se alejen significativamente del comportamiento general de los datos.
-% \end{enumerate}
+\subsection{Ajuste lineal}
+Debido a que este conjunto de datos corresponde a la distribución de frecuencias de una sola variable continua (y no a una relación bivariada tipo $y = f(x)$), no aplica la realización de un ajuste lineal sobre estos datos.
 
-% No es necesario realizar cálculos adicionales para describir los datos. La descripción debe centrarse en la información que puede obtenerse directamente de los valores registrados.
+\subsection{Interpretación de los parámetros}
+Al tratarse de un histograma de frecuencias, el parámetro principal es la frecuencia absoluta de cada intervalo. El maximo alcanzado del histograma indica el valor central representativo de la resistencia a la compresión del material analizado.
 
-% \subsection{Gráficos}
+\subsection{Relación entre variables}
+La representación gráfica mediante Python y a mano presentan total coincidencia en la altura de las barras y la escala de los ejes. El uso de Python permite una visualización más precisa y estandarizada, mientras que el gráfico manual confirma la correcta clasificación de los datos en los intervalos definidos.
 
-% Representen cada conjunto de datos mediante un gráfico realizado a mano y mediante un gráfico elaborado utilizando Python.
-
-% Para ambos gráficos deben considerar los siguientes elementos:
-
-% \begin{itemize}
-% \item nombre de la variable independiente y dependiente;
-% \item unidades de ambas variables;
-% \item escala adecuada en ambos ejes;
-% \item título o descripción del gráfico;
-% \item representación clara de todos los datos disponibles.
-% \end{itemize}
-
-% El gráfico realizado a mano debe ser suficientemente claro para identificar la tendencia de los datos. El gráfico realizado en Python debe contener los mismos datos y utilizar una representación equivalente.
-
-% No es necesario que los dos gráficos sean idénticos en su apariencia, pero ambos deben representar correctamente la información contenida en el conjunto de datos.
-
-% Después de cada gráfico, escriban una breve descripción de lo que se observa. Indiquen, por ejemplo, si existe una tendencia creciente o decreciente, si los datos parecen seguir una relación lineal o no lineal y si existe algún comportamiento particular que sea relevante mencionar.
-
-% \subsection{Ajuste lineal}
-
-% Cuando los datos presenten un comportamiento aproximadamente lineal, realicen un ajuste lineal utilizando Python.
-
-% El ajuste debe representarse sobre el mismo gráfico que contiene los datos experimentales. Indiquen la ecuación de la recta obtenida y los valores de sus parámetros.
-
-% \begin{equation*}
-% y = ax+b
-% \end{equation*}
-
-% Describan brevemente qué representan las variables $a$ y $b$ en el contexto del problema. Si alguno de los parámetros tiene una interpretación física, indiquen cuál es y cuáles son sus unidades.
-
-% No es necesario realizar manualmente el cálculo del ajuste lineal. El objetivo es utilizar Python como herramienta para obtener el ajuste y posteriormente interpretar sus resultados.
-
-% \subsection{Interpretación de los parámetros}
-
-% A partir del gráfico y, cuando corresponda, del ajuste lineal, interpreten la información obtenida.
-
-% En particular, indiquen:
-
-% \begin{enumerate}[label=\alph*)]
-% \item qué información proporciona la pendiente del gráfico;
-% \item qué información proporciona el intercepto, cuando sea relevante;
-% \item qué comportamiento de una variable puede inferirse a partir de los cambios en la otra;
-% \item si el comportamiento observado es consistente con una relación física conocida.
-% \end{enumerate}
-
-% La interpretación debe realizarse considerando las unidades de las variables y el contexto físico del conjunto de datos. No basta con indicar el valor de un parámetro: deben explicar qué significa dicho valor.
-
-% \subsection{Relación entre variables}
-
-% Finalmente, para cada conjunto de datos, describan la relación existente entre las variables estudiadas.
-
-% Indiquen si los datos son compatibles con una relación lineal, cuadrática, inversa u otro tipo de comportamiento, cuando esto pueda determinarse a partir de los gráficos. Justifiquen la respuesta utilizando las características observadas en los datos y en las representaciones gráficas.
-
-% Cuando corresponda, comparen la representación gráfica realizada a mano con la obtenida mediante Python e indiquen qué información permite obtener cada una.
-
-% El análisis debe ser breve y preciso. No es necesario repetir los valores que ya aparecen en las tablas o gráficos; concéntrense en explicar qué información física puede extraerse de ellos.
-
-% \section{Parte 3 - Análisis de datos y representación gráfica} \label{Parte-3}
-
-% \subsection{Descripción de los datos}
-
-% \subsection{Gráficos}
-
-% \subsection{Ajuste lineal}
-
-% \subsection{Interpretación de los parámetros}
-
-% \subsection{Relación entre variables}
-
-% \newpage
 
 \section{Análisis y conclusiones}
 
