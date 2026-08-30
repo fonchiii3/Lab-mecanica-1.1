@@ -499,18 +499,13 @@ Así, el valor de la segunda magnitud indirecta es:
 
 \section{Parte 3 - Análisis de datos y representación gráfica} \label{Parte-3}
 
-\subsection{Descripción de los datos}
-El conjunto de datos analizado corresponde a las mediciones de \textit{Resistencia a la Compresión} de un material, expresada en megapascales ($\text{MPa}$).
+\subsection{Conjunto de datos 1: Resistencia a la compresión}
 
-\begin{itemize}
-    \item \textbf{Variable estudiada:} Resistencia a la compresión (Magnitud continua).
-    \item \textbf{Unidad de medida:} Megapascales ($\text{MPa}$).
-    \item \textbf{Rango de valores:} Los datos se extienden desde un valor mínimo de $24.1\text{ MPa}$ hasta un máximo de $32.7\text{ MPa}$.
-    \item \textbf{Comportamiento observado:} Se aprecia un comportamiento unimodal con mayor concentración de frecuencias en el rango central ($27\text{ a }29\text{ MPa}$), disminuyendo progresivamente hacia los extremos.
-\end{itemize}
+El conjunto de datos analizado corresponde a las mediciones de resistencia a la compresión de un material, expresada en megapascales (MPa). Esta es una variable continua cuyos valores se extienden desde un mínimo de 24.1 MPa hasta un máximo de 32.7 MPa. Se eligió representar esta distribución mediante un histograma, ya que es el gráfico adecuado para visualizar la concentración de frecuencias en intervalos continuos y observar el comportamiento general del material.
 
-\subsection{Gráficos}
-Se representó la distribución de frecuencias de la resistencia a la compresión mediante un histograma agrupado en intervalos de ancho $2\text{ MPa}$ ($\text{bins} = [23, 25, 27, 29, 31, 33]$).
+\subsubsection{Representación gráfica}
+
+En la Fig. \ref{fig:grafico-mano} puede verse la representación gráfica de los datos, realizada a mano.
 
 \begin{figure}[h!]
 \centering
@@ -519,24 +514,20 @@ Se representó la distribución de frecuencias de la resistencia a la compresió
 \label{fig:grafico-mano}
 \end{figure}
 
+En la Fig. \ref{fig:grafico-python} puede verse la representación gráfica de los mismos datos, elaborada utilizando el paquete Matplotlib de Python.
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{grafico_python.png}
-\caption{Histograma de distribución de resistencia a la compresión elaborado en Python mediante Matplotlib.}
+\caption{Histograma de distribución de resistencia a la compresión elaborado en Python.}
 \label{fig:grafico-python}
 \end{figure}
 
-En ambos gráficos se observa con claridad que el intervalo modal es el comprendido entre $27\text{ y }29\text{ MPa}$, alcanzando una frecuencia máxima de $8$ muestras.
+\subsubsection{Descripción y análisis}
 
-\subsection{Ajuste lineal}
-Debido a que este conjunto de datos corresponde a la distribución de frecuencias de una sola variable continua (y no a una relación bivariada tipo $y = f(x)$), no aplica la realización de un ajuste lineal sobre estos datos.
+Los gráficos presentan la distribución de frecuencias de la resistencia a la compresión agrupada en intervalos de ancho 2 MPa (con límites en 23, 25, 27, 29, 31 y 33 MPa). En el eje horizontal se ubica la resistencia a la compresión, mientras que en el eje vertical se representa la frecuencia absoluta de cada intervalo. Al analizar las figuras, se aprecia un comportamiento unimodal con una mayor concentración de datos en la zona central, disminuyendo progresivamente hacia los extremos. Específicamente, el intervalo modal es el comprendido entre 27 y 29 MPa, el cual alcanza una frecuencia máxima de 8 muestras. Este valor es el central representativo de la resistencia típica del material analizado. 
 
-\subsection{Interpretación de los parámetros}
-Al tratarse de un histograma de frecuencias, el parámetro principal es la frecuencia absoluta de cada intervalo. El maximo alcanzado del histograma indica el valor central representativo de la resistencia a la compresión del material analizado.
-
-\subsection{Relación entre variables}
-La representación gráfica mediante Python y a mano presentan total coincidencia en la altura de las barras y la escala de los ejes. El uso de Python permite una visualización más precisa y estandarizada, mientras que el gráfico manual confirma la correcta clasificación de los datos en los intervalos definidos.
-
+Al comparar ambas representaciones, se observa total coincidencia en la altura de las barras y la escala de los ejes; el uso de Python entrega una visualización más precisa, mientras que el gráfico manual confirma la correcta clasificación de los datos. Finalmente, debido a que se trata de la distribución de frecuencias de una sola variable continua (y no de una relación bivariada), no corresponde aplicar un ajuste lineal a este conjunto de datos.
 
 \section{Análisis y conclusiones}
 
